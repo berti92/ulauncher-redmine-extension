@@ -28,7 +28,7 @@ class KeywordQueryEventListener(EventListener):
         logger.info(event.get_argument())
         logger.info(extension.preferences['redmine_url'])
         logger.info(extension.preferences['redmine_api_key'])
-        redmine = Redmine(extension.preferences['redmine_url'], version='3.0.7', key=extension.preferences['redmine_api_key'])
+        redmine = Redmine(extension.preferences['redmine_url'], version=extension.preferences['redmine_version'], key=extension.preferences['redmine_api_key'])
         query = str(event.get_argument()) or str()
         if len(query) != 0:
             issue = None
