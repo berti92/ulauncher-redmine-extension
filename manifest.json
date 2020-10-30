@@ -1,0 +1,31 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Redmine",
+  "description": "Extension for Ulauncher to retrieve Redmine tickets",
+  "developer_name": "Andreas Treubert",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "redmine_kw",
+      "type": "keyword",
+      "name": "Redmine keyword",
+      "description": "Keyword to use the redmine extension",
+      "default_value": "rd"
+    },
+    {
+      "id": "redmine_url",
+      "type": "input",
+      "name": "Redmine URL",
+      "description": "URL to get access to your redmine installation"
+    },
+    {
+      "id": "redmine_api_key",
+      "type": "input",
+      "name": "Redmine API KEY",
+      "description": "API key to get access to your redmine installation"
+    }
+  ]
+}
