@@ -26,6 +26,12 @@
       "type": "input",
       "name": "Redmine API KEY",
       "description": "API key to get access to your redmine installation"
+    },
+    {
+      "id": "redmine_version",
+      "type": "input",
+      "name": "Redmine Version",
+      "description": "Version of your redmine installation. E.g. 3.3.0"
     }
   ]
 }
